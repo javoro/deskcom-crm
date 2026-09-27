@@ -1,41 +1,41 @@
-# Código de Conduta — Contributor Covenant
+# Código de Conducta — Contributor Covenant
 
-## Nosso compromisso
+## Nuestro compromiso
 
-Nós, como membros, contribuidores e líderes, nos comprometemos a fazer da participação em nossa comunidade uma experiência livre de assédio para todos, independentemente de idade, corpo, deficiência visível ou invisível, etnia, características sexuais, identidade e expressão de gênero, nível de experiência, educação, status socioeconômico, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
+Nosotros, como miembros, contribuyentes y líderes, nos comprometemos a hacer de la participación en nuestra comunidad una experiencia libre de acoso para todas las personas, independientemente de su edad, tamaño corporal, discapacidad visible o invisible, etnia, características sexuales, identidad y expresión de género, nivel de experiencia, educación, nivel socioeconómico, nacionalidad, apariencia personal, raza, religión o identidad y orientación sexual.
 
-Comprometemo-nos a agir e interagir de maneiras que contribuam para uma comunidade aberta, acolhedora, diversa, inclusiva e saudável.
+Nos comprometemos a actuar e interactuar de maneras que contribuyan a una comunidad abierta, acogedora, diversa, inclusiva y sana.
 
-## Nossos padrões
+## Nuestros estándares
 
-Exemplos de comportamento que contribuem para um ambiente positivo:
+Ejemplos de comportamiento que contribuyen a un ambiente positivo:
 
-- Demonstrar empatia e bondade com outras pessoas
-- Respeitar opiniões, pontos de vista e experiências divergentes
-- Dar e receber feedback construtivo com elegância
-- Assumir responsabilidade, pedir desculpas a quem for afetado por nossos erros e aprender com a experiência
-- Focar no que é melhor não só para nós individualmente, mas para a comunidade como um todo
+- Demostrar empatía y amabilidad hacia otras personas
+- Respetar las opiniones, puntos de vista y experiencias diferentes
+- Dar y recibir retroalimentación constructiva con elegancia
+- Asumir la responsabilidad, pedir disculpas a quienes se vean afectados por nuestros errores y aprender de la experiencia
+- Enfocarnos en lo que es mejor no solo para nosotros como individuos, sino para la comunidad en su conjunto
 
-Exemplos de comportamento inaceitável:
+Ejemplos de comportamiento inaceptable:
 
-- Uso de linguagem ou imagens sexualizadas e atenção ou avanços sexuais de qualquer tipo
-- Trolling, comentários insultuosos ou depreciativos e ataques pessoais ou políticos
-- Assédio público ou privado
-- Publicar informações privadas de terceiros, como endereço físico ou de e-mail, sem permissão explícita
-- Outras condutas que poderiam razoavelmente ser consideradas inadequadas em ambiente profissional
+- El uso de lenguaje o imágenes sexualizadas, y la atención o insinuaciones sexuales de cualquier tipo
+- Trolling, comentarios insultantes o despectivos y ataques personales o políticos
+- El acoso público o privado
+- Publicar información privada de terceros, como una dirección física o de correo electrónico, sin su permiso explícito
+- Otras conductas que razonablemente podrían considerarse inapropiadas en un entorno profesional
 
-## Responsabilidades de aplicação
+## Responsabilidades de aplicación
 
-Os mantenedores do projeto são responsáveis por esclarecer e aplicar nossos padrões de comportamento aceitável e tomarão ações corretivas apropriadas e justas em resposta a qualquer comportamento que considerem inadequado, ameaçador, ofensivo ou nocivo.
+Los mantenedores del proyecto son responsables de aclarar y hacer cumplir nuestros estándares de comportamiento aceptable y tomarán las acciones correctivas apropiadas y justas en respuesta a cualquier comportamiento que consideren inapropiado, amenazante, ofensivo o dañino.
 
-## Escopo
+## Alcance
 
-Este Código de Conduta se aplica a todos os espaços da comunidade (issues, PRs, discussions) e também quando um indivíduo representa oficialmente a comunidade em espaços públicos.
+Este Código de Conducta aplica en todos los espacios de la comunidad (issues, PRs, discussions) y también cuando una persona representa oficialmente a la comunidad en espacios públicos.
 
-## Aplicação
+## Aplicación
 
-Casos de comportamento abusivo, de assédio ou de outra forma inaceitável podem ser reportados aos mantenedores em **rafael@maudibrasil.com.br**. Todas as reclamações serão analisadas e investigadas de forma rápida e justa, respeitando a privacidade e a segurança de quem reportar.
+Los casos de comportamiento abusivo, de acoso o de cualquier otra forma inaceptable pueden reportarse a los mantenedores en **rafael@maudibrasil.com.br**. Todas las quejas se revisarán e investigarán de forma rápida y justa, respetando la privacidad y la seguridad de quien reporte.
 
-## Atribuição
+## Atribución
 
-Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org), versão 2.1, disponível em <https://www.contributor-covenant.org/version/2/1/code_of_conduct.html>.
+Este Código de Conducta está adaptado del [Contributor Covenant](https://www.contributor-covenant.org), versión 2.1, disponible en <https://www.contributor-covenant.org/version/2/1/code_of_conduct.html>.

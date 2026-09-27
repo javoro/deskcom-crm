@@ -1,79 +1,79 @@
-# 🧭 Visão — DeskcommCRM
+# 🧭 Visión — DeskcommCRM
 
-> **O sistema operacional de vendas com agentes de IA, open source, nativo no WhatsApp.**
-> Este documento é a fonte da verdade do posicionamento do projeto. Tudo que for público (README, site, docs, descrições) deriva daqui.
+> **El sistema operativo de ventas con agentes de IA, open source, nativo en WhatsApp.**
+> Este documento es la fuente de la verdad del posicionamiento del proyecto. Todo lo que sea público (README, sitio, docs, descripciones) se deriva de aquí.
 
 ---
 
-## O nome
+## El nombre
 
-**Deskcomm** vem de **Desk** (mesa) + **comm** (comércio): **o comercial de mesa**.
-A ideia que o nome carrega: toda a operação comercial de um negócio — atendimento, qualificação, funil, pós-venda — operada a partir de uma única mesa, por pessoas e por agentes de IA trabalhando juntos.
+**Deskcomm** viene de **Desk** (escritorio) + **comm** (comercio): **el comercial de escritorio**.
+La idea que carga el nombre: toda la operación comercial de un negocio — atención, calificación, embudo, posventa — operada desde un único escritorio, por personas y por agentes de IA trabajando juntos.
 
-O "CRM" no nome é a categoria de entrada, não o teto. O DeskcommCRM é **mais que um CRM**: é o sistema onde a venda acontece.
+El "CRM" en el nombre es la categoría de entrada, no el techo. DeskcommCRM es **más que un CRM**: es el sistema donde sucede la venta.
 
-## De onde viemos, pra onde vamos
+## De dónde venimos, hacia dónde vamos
 
-O projeto nasceu em 2026 como um CRM operacional para **e-commerce brasileiro** — WhatsApp via WAHA, integração Nuvemshop, LGPD nativa. Quando abrimos o código, a comunidade decidiu outra coisa: a maioria dos adopters passou a rodar o Deskcomm em **clínicas, infoprodutos, imobiliárias, agências e prestadores de serviço** — qualquer negócio que vende conversando.
+El proyecto nació en 2026 como un CRM operativo para **e-commerce brasileño** — WhatsApp vía WAHA, integración con Nuvemshop, LGPD nativa. Cuando abrimos el código, la comunidad decidió otra cosa: la mayoría de quienes lo adoptaron empezó a correr Deskcomm en **clínicas, infoproductos, inmobiliarias, agencias y prestadores de servicios** — cualquier negocio que vende conversando.
 
-Os pedidos de feature dessa comunidade empurraram o produto na direção que hoje é a nossa identidade: **agentes de IA cada vez mais capazes, integrados ao sistema via MCP, operando o CRM de verdade**. O e-commerce continua sendo um caso de uso de primeira classe (foi nosso berço e a integração Nuvemshop prova isso) — mas ele é **um** vertical, não **o** produto.
+Las solicitudes de funciones de esa comunidad empujaron el producto en la dirección que hoy es nuestra identidad: **agentes de IA cada vez más capaces, integrados al sistema vía MCP, operando el CRM de verdad**. El e-commerce sigue siendo un caso de uso de primera clase (fue nuestra cuna y la integración con Nuvemshop lo prueba) — pero es **una** vertical, no **el** producto.
 
-**A transição, em uma frase:** de "CRM de e-commerce com IA" para **"sistema operacional de vendas com agentes de IA, para qualquer negócio que vende pelo WhatsApp"**.
+**La transición, en una frase:** de "CRM de e-commerce con IA" a **"sistema operativo de ventas con agentes de IA, para cualquier negocio que vende por WhatsApp"**.
 
-## O que acreditamos sobre agentes de IA
+## Lo que creemos sobre los agentes de IA
 
-1. **Agente que opera, não chatbot que enfeita.** Nosso agente lê contexto real (histórico, perfil, pedido), consulta a base de conhecimento do tenant (RAG por organização), responde, qualifica, move o lead no funil — e é **assignee de primeira classe** no sistema, com as mesmas regras de governança de um atendente humano.
+1. **Un agente que opera, no un chatbot que adorna.** Nuestro agente lee contexto real (historial, perfil, pedido), consulta la base de conocimiento del tenant (RAG por organización), responde, califica, mueve el lead en el embudo — y es **responsable (assignee) de primera clase** en el sistema, con las mismas reglas de gobernanza que un agente humano.
 
-2. **Agentes que se auto-aprimoram.** O sistema é desenhado como um flywheel: conversas resolvidas viram conhecimento novo na base RAG; handoffs pro humano marcam onde o agente ainda não alcança; métricas e budget por tenant fecham o loop. Cada dia de operação torna o agente melhor — com **gate humano** nas decisões que importam. Essa é a aposta central do roadmap.
+2. **Agentes que se mejoran a sí mismos.** El sistema está diseñado como un flywheel: las conversaciones resueltas se vuelven conocimiento nuevo en la base RAG; los handoffs a una persona marcan dónde el agente todavía no llega; las métricas y el presupuesto por tenant cierran el ciclo. Cada día de operación hace mejor al agente — con **aprobación humana** en las decisiones que importan. Esa es la apuesta central del roadmap.
 
-3. **MCP como sistema nervoso.** O CRM inteiro é exposto como tools MCP — primeiro para os agentes internos, depois como contrato público. Um negócio deve poder plugar o agente que quiser (Claude, o que vier) e ele **opera** o Deskcomm: cria lead, responde cliente, agenda, consulta pedido. O CRM vira infraestrutura para agentes.
+3. **MCP como sistema nervioso.** El CRM entero se expone como tools MCP — primero para los agentes internos, después como contrato público. Un negocio debe poder conectar el agente que quiera (Claude, el que venga) y que este **opere** Deskcomm: crear un lead, responder a un cliente, agendar, consultar un pedido. El CRM se vuelve infraestructura para agentes.
 
-4. **Humano no comando.** Handoff auditado, escopo por papel (RBAC), fila com posição, budget de IA por organização. Autonomia do agente cresce na medida em que a governança prova que ele acerta.
+4. **La persona al mando.** Handoff auditado, alcance por rol (RBAC), cola con posición, presupuesto de IA por organización. La autonomía del agente crece en la medida en que la gobernanza demuestra que acierta.
 
-## Os pilares do produto
+## Los pilares del producto
 
-| Pilar | O que significa na prática |
+| Pilar | Qué significa en la práctica |
 |---|---|
-| **Agentes de IA nativos** | RAG por tenant, análise de sentimento, handoff IA→humano auditado, IA como assignee, budget por org |
-| **CRM automatizado pela IA** | O agente move leads, aplica tags, dispara automações QUANDO/SE/ENTÃO — o funil anda sozinho |
-| **Ferramentas de apoio ao comercial** | Inbox em tempo real, kanban com fractional indexing, customer 360, métricas por atendente, roteamento automático |
-| **WhatsApp-native** | WAHA multi-número, anti-banimento, mídia, STOP detection — o canal onde o Brasil vende |
-| **Multi-nicho por design** | `vocabulary` configurável por pipeline (lead = Cliente/Paciente/Comprador; won = Pago/Agendado/Fechado) — o mesmo core serve e-commerce, clínica, imobiliária, infoproduto |
-| **Self-hosted de verdade** | Seus dados na sua VPS, kit de instalação com 1 comando, `baseline.sql` auto-curativo, atualização com 1 script |
-| **Compliance nativo** | Multi-tenant com RLS testada em CI, LGPD by-design (redact, data_request, anonimização), audit append-only |
+| **Agentes de IA nativos** | RAG por tenant, análisis de sentimiento, handoff IA→humano auditado, IA como responsable, presupuesto por organización |
+| **CRM automatizado por la IA** | El agente mueve leads, aplica etiquetas, dispara automatizaciones CUANDO/SI/ENTONCES — el embudo avanza solo |
+| **Herramientas de apoyo al área comercial** | Inbox en tiempo real, kanban con fractional indexing, customer 360, métricas por agente, enrutamiento automático |
+| **Nativo de WhatsApp** | WAHA multinúmero, anti-baneo, medios, detección de STOP — el canal donde se vende en Latinoamérica |
+| **Multinicho por diseño** | `vocabulary` configurable por pipeline (lead = Cliente/Paciente/Comprador; won = Pagado/Agendado/Cerrado) — el mismo núcleo sirve para e-commerce, clínicas, inmobiliarias, infoproductos |
+| **Self-hosted de verdad** | Tus datos en tu VPS, kit de instalación con 1 comando, `baseline.sql` auto-curativo, actualización con 1 script |
+| **Cumplimiento nativo** | Multi-tenant con RLS probada en CI, LGPD por diseño (redact, data_request, anonimización), audit append-only |
 
-## Posicionamento
+## Posicionamiento
 
-**Categoria de entrada (âncora):** a alternativa **open source e self-hosted** às plataformas fechadas de atendimento e vendas por WhatsApp (Kommo, Octadesk, Intercom, Zendesk).
+**Categoría de entrada (ancla):** la alternativa **open source y self-hosted** a las plataformas cerradas de atención y ventas por WhatsApp (Kommo, Octadesk, Intercom, Zendesk).
 
-**Categoria própria (bandeira):** **sistema operacional de vendas com agentes de IA** — *AI Sales OS*. É pra onde a âncora nos leva: os incumbentes vendem assinatura de chat com bot acoplado; nós entregamos um sistema onde o agente de IA é operador nativo e o código é seu.
+**Categoría propia (bandera):** **sistema operativo de ventas con agentes de IA** — *AI Sales OS*. Es hacia donde nos lleva el ancla: los incumbentes venden una suscripción de chat con un bot acoplado; nosotros entregamos un sistema donde el agente de IA es operador nativo y el código es tuyo.
 
-**Uma frase (pt-br):**
-> DeskcommCRM é o sistema operacional de vendas open source com agentes de IA nativos e WhatsApp — self-hosted, multi-tenant, para qualquer negócio que vende conversando.
+**Una frase (es):**
+> DeskcommCRM es el sistema operativo de ventas open source con agentes de IA nativos y WhatsApp — self-hosted, multi-tenant, para cualquier negocio que vende conversando.
 
 **One-liner (en):**
 > Open-source AI sales OS: a self-hosted CRM where AI agents natively operate sales and support over WhatsApp — an open alternative to Kommo, Octadesk and Intercom.
 
-**Público:** negócios brasileiros (e além) que vendem pelo WhatsApp — e-commerce, clínicas, imobiliárias, infoprodutores, agências, serviços — e a comunidade dev/self-hosted que instala pra si ou pra clientes.
+**Público:** negocios de Latinoamérica (y más allá) que venden por WhatsApp — e-commerce, clínicas, inmobiliarias, infoproductores, agencias, servicios — y la comunidad dev/self-hosted que lo instala para sí o para sus clientes.
 
-## Modelo do projeto (sem letra miúda)
+## Modelo del proyecto (sin letra chiquita)
 
-- **O software é 100% open source (MIT), completo, sem versão paga.** Não vendemos assinatura. Não existe feature travada.
-- **A monetização é por infraestrutura:** a **Hostinger** é a hospedagem recomendada para o caminho self-host, com o cupom `THALENA` para novas contas nos planos anuais de VPS. O projeto continua sem assinatura ou funcionalidades pagas.
-- **O caminho genérico nunca é sabotado:** `docker compose` e o `setup-kit` funcionam em qualquer VPS. A recomendação nunca é o único caminho. (Regra de ouro do open source sustentável: percepção de pegadinha mata a marca.)
+- **El software es 100% open source (MIT), completo, sin versión de pago.** No vendemos suscripción. No existen funciones bloqueadas.
+- **La monetización es por infraestructura:** **Hostinger** es el hosting recomendado para el camino self-host, con el cupón `THALENA` para cuentas nuevas en los planes anuales de VPS. El proyecto sigue sin suscripción ni funciones de pago.
+- **El camino genérico nunca se sabotea:** `docker compose` y el `setup-kit` funcionan en cualquier VPS. La recomendación nunca es el único camino. (Regla de oro del open source sostenible: la percepción de trampa mata la marca.)
 
-## Princípios de comunicação
+## Principios de comunicación
 
-1. **Keyword primeiro, jargão depois.** Em todo título público: "open source", "AI agents", "WhatsApp", "CRM", "self-hosted" antes de qualquer nome interno de subsistema.
-2. **Mostrar, não descrever.** Screenshot/GIF do produto no primeiro scroll de qualquer página.
-3. **Âncora explícita.** "Alternativa open source a X" aparece no About do GitHub, no README e no site — é assim que a demanda dos incumbentes nos encontra (busca e LLMs).
-4. **E-commerce é exemplo, não definição.** Ao citar casos de uso, sempre em lista multi-nicho ("e-commerce, clínicas, imobiliárias...").
-5. **Transparência de modelo.** Recomendação de hospedagem, cupom e telemetria declarados em linguagem humana no README, nunca escondidos.
+1. **Keyword primero, jerga después.** En todo título público: "open source", "AI agents", "WhatsApp", "CRM", "self-hosted" antes de cualquier nombre interno de subsistema.
+2. **Mostrar, no describir.** Screenshot/GIF del producto en el primer scroll de cualquier página.
+3. **Ancla explícita.** "Alternativa open source a X" aparece en el About de GitHub, en el README y en el sitio — es así como nos encuentra la demanda de los incumbentes (buscadores y LLMs).
+4. **El e-commerce es un ejemplo, no la definición.** Al citar casos de uso, siempre en lista multinicho ("e-commerce, clínicas, inmobiliarias...").
+5. **Transparencia del modelo.** Recomendación de hosting, cupón y telemetría declarados en lenguaje humano en el README, nunca escondidos.
 
-## Norte de 3 anos
+## Norte a 3 años
 
-Ser a resposta padrão — do Google, do ChatGPT, do Reddit e do dev brasileiro — para a pergunta **"qual o melhor CRM open source com agentes de IA e WhatsApp?"**; com milhares de instâncias self-hosted rodando, um ecossistema de agentes plugados via MCP público, e um flywheel de auto-aprimoramento que faça cada instância vender melhor a cada mês de operação.
+Ser la respuesta por defecto — de Google, de ChatGPT, de Reddit y del dev latinoamericano — a la pregunta **"¿cuál es el mejor CRM open source con agentes de IA y WhatsApp?"**; con miles de instancias self-hosted corriendo, un ecosistema de agentes conectados vía MCP público, y un flywheel de automejora que haga que cada instancia venda mejor con cada mes de operación.
 
 ---
 
-*Última revisão: 2026-07-19 — reposicionamento e-commerce → multi-nicho / AI Sales OS.*
+*Última revisión: 2026-07-19 — reposicionamiento e-commerce → multinicho / AI Sales OS. Traducido al español el 2026-09-27.*

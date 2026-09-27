@@ -1,34 +1,34 @@
-# Política de Segurança
+# Política de Seguridad
 
-## Versões suportadas
+## Versiones soportadas
 
-O DeskcommCRM é distribuído em rolling release a partir da branch `main`. Correções de segurança são aplicadas apenas à versão mais recente — mantenha sua instalação atualizada (`bash setup-kit/update.sh` em self-host).
+DeskcommCRM se distribuye en rolling release a partir de la branch `main`. Las correcciones de seguridad se aplican solo a la versión más reciente — mantén tu instalación actualizada (`bash setup-kit/update.sh` en self-host).
 
-| Versão | Suportada |
+| Versión | Soportada |
 | --- | --- |
-| `main` (mais recente) | ✅ |
-| Snapshots antigos | ❌ |
+| `main` (más reciente) | ✅ |
+| Snapshots antiguos | ❌ |
 
-## Reportando uma vulnerabilidade
+## Reportar una vulnerabilidad
 
-**Não abra issue pública para vulnerabilidades.**
+**No abras un issue público para vulnerabilidades.**
 
-Use o [relato privado de vulnerabilidades do GitHub](https://github.com/melgarafael/DeskcommCRM/security/advisories/new) — o relato chega só aos mantenedores, e o histórico fica auditável.
+Usa el [reporte privado de vulnerabilidades de GitHub](https://github.com/melgarafael/DeskcommCRM/security/advisories/new) — el reporte llega solo a los mantenedores, y el historial queda auditable.
 
-O que esperar:
+Qué esperar:
 
-- **Confirmação de recebimento** em até 7 dias.
-- **Avaliação e resposta** em até 30 dias, com plano de correção quando confirmada.
-- **Crédito** no advisory publicado, se você quiser.
+- **Confirmación de recepción** en un plazo de 7 días.
+- **Evaluación y respuesta** en un plazo de 30 días, con un plan de corrección cuando se confirme.
+- **Crédito** en el advisory publicado, si así lo quieres.
 
-## Escopo
+## Alcance
 
-Interessam especialmente relatos sobre:
+Interesan especialmente los reportes sobre:
 
-- Vazamento entre tenants (bypass de RLS ou de filtro `organization_id`)
-- Bypass de autenticação/RBAC (roles `viewer`/`agent`/`manager`/`admin`, super-admin)
-- Exposição de dados pessoais (LGPD): contatos, conversas, mídia do WhatsApp
-- Injeção via payloads de webhook (WAHA, Nuvemshop) ou da API `/api/v1`
-- Vazamento de segredos (API keys, tokens bearer, cookies de sessão)
+- Fuga entre tenants (bypass de RLS o del filtro `organization_id`)
+- Bypass de autenticación/RBAC (roles `viewer`/`agent`/`manager`/`admin`, super-admin)
+- Exposición de datos personales (LGPD): contactos, conversaciones, medios de WhatsApp
+- Inyección vía payloads de webhook (WAHA, Nuvemshop) o de la API `/api/v1`
+- Fuga de secretos (API keys, bearer tokens, cookies de sesión)
 
-Instalações self-host são responsabilidade de quem hospeda; problemas de configuração do servidor (firewall, TLS do VPS etc.) estão fora do escopo do projeto, mas melhorias no kit de instalação são bem-vindas como issue normal.
+Las instalaciones self-host son responsabilidad de quien las hospeda; los problemas de configuración del servidor (firewall, TLS del VPS, etc.) están fuera del alcance del proyecto, pero las mejoras al kit de instalación son bienvenidas como un issue normal.
